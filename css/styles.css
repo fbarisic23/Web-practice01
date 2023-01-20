@@ -1,0 +1,128 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  background-color: black;
+  color: white;
+  font-size: 1.7rem;
+}
+
+.navbar-logo {
+  display: flex;
+  list-style: none;
+  padding-left: 10%;
+}
+
+.navbar-logo li {
+  padding: 0 1rem;
+}
+
+.navbar-links {
+  display: flex;
+  list-style: none;
+  padding-right: 8rem;
+}
+
+.navbar-links li {
+  padding: 0 1rem;
+}
+
+.line {
+  border-left: 2px solid white;
+}
+
+.line:hover {
+  text-decoration: underline;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: white;
+}
+
+.sign-in {
+  background-color: #4c5fd5;
+  padding: 0.6rem 2rem;
+  border-radius: 10px;
+  transition: all 0.3s;
+}
+
+.sign-in:hover {
+  background-color: white;
+  color: black;
+}
+
+.submit {
+  padding: 0.6rem 1rem;
+  border-radius: 10px;
+  border: white solid 1px;
+}
+
+.toggle-button {
+  position: absolute;
+  top: 2rem;
+  right: 6rem;
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 35px;
+  height: 25px;
+}
+
+.toggle-button .bar {
+  height: 3px;
+  width: 100%;
+  background-color: white;
+  border-radius: 10px;
+}
+
+@media screen and (max-width: 1200px) {
+  .navbar-links {
+    display: none;
+  }
+
+  .toggle-button {
+    display: flex;
+  }
+
+  .navbar {
+    flex-direction: column;
+  }
+
+  .navbar-links {
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+  }
+
+  .navbar-links li {
+    padding: 1rem;
+    width: 50%;
+    text-align: center;
+  }
+
+  .navbar-links li:last-child {
+    border-top: white 1px solid;
+  }
+
+  .sign-in {
+    background-color: black;
+    border-radius: 0;
+  }
+
+  .submit {
+    border: none;
+  }
+
+  .navbar-links.active {
+    display: flex;
+  }
+}

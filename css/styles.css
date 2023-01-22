@@ -18,7 +18,7 @@ body {
 .navbar-logo {
   display: flex;
   list-style: none;
-  padding-left: 10%;
+  padding-left: 7%;
 }
 
 .navbar-logo li {
@@ -160,6 +160,7 @@ h1 {
   font-size: 1.5rem;
   border: none;
   border-radius: 5px;
+  background-color: white;
 }
 
 .search-bar button {
@@ -185,5 +186,59 @@ h1 {
 @media screen and (max-width: 500px) {
   h1 {
     font-size: 2.5rem;
+  }
+}
+
+.services {
+  max-width: 1630px;
+  width: 79%;
+  margin: 8rem auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+}
+
+.card {
+  display: flex;
+  padding-right: 15px;
+  margin-bottom: 3rem;
+  line-height: 1.3;
+}
+
+.card p,
+h2 {
+  font-size: 1.6rem;
+}
+
+.card a {
+  font-size: 1.4rem;
+  text-decoration: none;
+  color: #4c5fd5;
+}
+
+.card a:hover {
+  text-decoration: underline;
+}
+
+.card-text {
+  padding-right: 1.5rem;
+}
+
+.icon {
+  max-width: 90px;
+  max-height: 90px;
+  margin-right: 20px;
+  margin-top: 30px;
+}
+
+@media screen and (max-width: 768px) {
+  .services {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .services {
+    width: 90%;
   }
 }
